@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Event Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Function to handle mouseenter event
+            $("div").mouseenter(function () {
+                $(this).css("background-color", "lightblue");
+            });
+
+            // Function to handle mouseleave event
+            $("div").mouseleave(function () {
+                $(this).css("background-color", "lightgray");
+            });
+        });
+    </script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            margin: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>Hover over me!</div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keyboard Event Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Function to handle keydown event
+            $(document).keydown(function (event) {
+                $("#key-info").html("Keydown Event: Key Code " + event.keyCode + ", Key Name " + event.key);
+            });
+
+            // Function to handle keyup event
+            $(document).keyup(function (event) {
+                $("#key-info").html("Keyup Event: Key Code " + event.keyCode + ", Key Name " + event.key);
+            });
+        });
+    </script>
+    <style>
+        #key-info {
+            font-size: 18px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="key-info">Press a key to see its code and name.</div>
+</body>
+</html>
